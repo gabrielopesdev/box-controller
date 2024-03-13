@@ -6,9 +6,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Fechamento do Caixa</title>
+    <style>
+
+        :root, [data-bs-theme=light] {
+
+            --bs-primary-rgb: 255, 213, 0; /*Amarelo*/
+            --bs-secondary-rgb: 242, 223 , 126; /*Amarelo escuro*/
+            --bs-warning-rgb: 38, 38, 38; /*Preto*/
+
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -27,8 +37,249 @@
         </div>
     </header>
     <section id="caixa">
-        <h2>Caixa: </h2>
+        <h2>Caixa:</h2>
+        <table>
+            <tbody>
+                <tr class="d-flex gap-2">
+                    <td>R$0,05</td>
+                    <td>X</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+                <tr class="d-flex gap-2">
+                    <td>R$0,10</td>
+                    <td>X</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+                <tr class="d-flex gap-2">
+                    <td>R$0,25</td>
+                    <td>X</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+                <tr class="d-flex gap-2">
+                    <td>R$0,50</td>
+                    <td>X</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+                <tr class="d-flex gap-2">
+                    <td>R$1,00</td>
+                    <td>X</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+                <tr class="d-flex gap-2">
+                    <td>R$2,00</td>
+                    <td>X</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+                <tr class="d-flex gap-2">
+                    <td>R$5,00</td>
+                    <td>X</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+                <tr class="d-flex gap-2">
+                    <td>R$10,00</td>
+                    <td>X</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+                <tr class="d-flex gap-2">
+                    <td>R$20,00</td>
+                    <td>X</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+                <tr class="d-flex gap-2">
+                    <td>R$50,00</td>
+                    <td>X</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+                <tr class="d-flex gap-2">
+                    <td>R$100,00</td>
+                    <td>X</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+                <tr class="d-flex gap-2">
+                    <td>R$200,00</td>
+                    <td>X</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </section>
+    <section>
+        <h2>Saídas</h2>
+        <div>
+            <div class="saidas-cx">
+                <h3>saídas do caixa</h3>
+                <div>
+                    <h4>descrição</h4>
+                    <div>
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                </div>
+                <div>
+                    <h4>valor</h4>
+                    <input type="number">
+                    <input type="number">
+                    <input type="number">
+                    <input type="number">
+                    <input type="number">
+                </div>
+            </div>
+            <div class="saidas-ncx">
+                <h3>saídas de fora do caixa</h3>
+                <div>
+                    <h4>descrição</h4>
+                    <div>
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                </div>
+                <div>
+                    <h4>valor</h4>
+                    <input type="number">
+                    <input type="number">
+                    <input type="number">
+                    <input type="number">
+                    <input type="number">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3>relatório do dia</h3>
+        <div>
+            <div>
+                <p>vendas em dinheiro:</p>
+                <input type="number">
+            </div>
+            <div>
+                <p>vendas no cartão:</p>
+                <input type="number">
+            </div>
+            <div>
+                <p>total em vendas:</p>
+                <p id="total-vendas-el">#</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>saídas totais:</p>
+                <p id="saidas-totais-el">#</p>
+            </div>
+            <div>
+                <p>caixa final:</p>
+                <p id="caixa-final-el">#</p>
+            </div>
+            <div>
+                <p>diferença:</p>
+                <p id="diferenca-el">#</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>"Se Deus é por nós, que será contra nós?"</h2>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
