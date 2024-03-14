@@ -36,9 +36,11 @@
             font-weight: 700;
             font-style: normal;
         }
+
         p {
             font-size: 12px;
         }
+
     </style>
 </head>
 <body>
@@ -268,35 +270,43 @@
                 </div>
         </div>
     </section>
-    <section class=" container bg-primary text-center">
-        <h3>relatório do dia</h3>
-        <div>
-            <div>
-                <p>vendas em dinheiro:</p>
-                <input type="number">
-            </div>
-            <div>
-                <p>vendas no cartão:</p>
-                <input type="number">
-            </div>
-            <div>
-                <p>total em vendas:</p>
-                <p id="total-vendas-el">#</p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <p>saídas totais:</p>
-                <p id="saidas-totais-el">#</p>
-            </div>
-            <div>
-                <p>caixa final:</p>
-                <p id="caixa-final-el">#</p>
-            </div>
-            <div>
-                <p>diferença:</p>
-                <p id="diferenca-el">#</p>
-            </div>
+    <section class="bg-secondary text-center">
+        <div class="p-5">
+            <div class="container d-flex flex-column gap-5 p-5 bg-light rounded">
+                <h3 class="roboto-regular">relatório do dia</h3>
+                <div class="container d-flex flex-column align-items-center p-3 bg-light border">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <p class="m-0">vendas em dinheiro:</p>
+                            <input type="number" style="max-width: 100px;">
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <p class="m-0">vendas no cartão:</p>
+                            <input type="number" style="max-width: 100px;">
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <p>total em vendas:</p>
+                            <p id="total-vendas-el">#</p>
+                        </div>                           
+                    </div>
+                </div>
+                <div class="container bg-light border d-flex justify-content-center p-3">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <p class="m-0">saídas totais:</p>
+                            <p class="m-0" id="saidas-totais-el">#</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <p class="m-0">caixa final:</p>
+                            <p class="m-0" id="caixa-final-el">#</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <p class="m-0">diferença:</p>
+                            <p class="m-0" id="diferenca-el">#</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>            
         </div>
     </section>
     <footer>
